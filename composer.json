@@ -1,0 +1,30 @@
+{
+  "name": "tests-always-included/soapy",
+  "description": "A PHP SoapClient inspired by Guzzle and Symfony",
+  "type": "library",
+  "keywords": ['SOAP', 'SoapClient'],
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "": "tests/"
+    }
+  },
+  "require": {
+    "symfony/event-dispatcher": "@dev"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "@dev"
+  },
+  "suggest": {
+    "monolog/monolog": "Log requests and responses."
+  },
+  "support": {
+    "issues": "https://github.com/wjaspers/soapy/issues",
+    "source": "https://github.com/wjaspers/soapy"
+  }
+}
