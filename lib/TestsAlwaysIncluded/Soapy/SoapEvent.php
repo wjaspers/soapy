@@ -3,6 +3,8 @@
 namespace TestsAlwaysIncluded\Soapy;
 
 use Symfony\Component\EventDispatcher\Event;
+use SoapClient;
+use SoapFault;
 
 class SoapEvent extends Event
 {
@@ -58,7 +60,7 @@ class SoapEvent extends Event
 	 * Sets the current SoapFault
 	 * @param SoapFault $fault
 	 */
-	public function setFault($fault)
+	public function setFault(SoapFault $fault)
 	{
 		$this->fault = $fault;
 	}
