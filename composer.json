@@ -4,6 +4,7 @@
   "type": "library",
   "keywords": ["SOAP", "SoapClient"],
   "license": "MIT",
+  "prefer-stable": true,
   "autoload": {
     "psr-4": {
       "": "src/"
@@ -15,6 +16,8 @@
     }
   },
   "require": {
+    "php": "5.3+",
+    "ext-soap": "*",
     "symfony/event-dispatcher": "@dev"
   },
   "require-dev": {
