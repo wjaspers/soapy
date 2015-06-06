@@ -4,6 +4,8 @@ namespace TestsAlwaysIncluded\Services;
 
 use SoapClient as BaseSoapClient;
 use SoapFault;
+use Symfony\Component\EventDispatcher\EventDispatcher;
+use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 class SoapClient extends BaseSoapClient
 {
