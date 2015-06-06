@@ -2,6 +2,8 @@
 
 namespace TestsAlwaysIncluded\Soapy;
 
+use RuntimeException;
+
 class RequestContext
 {
 	/** @var array */
