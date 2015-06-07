@@ -5,6 +5,7 @@ namespace TestsAlwaysIncluded\Soapy\EventSubscribers;
 use RuntimeException;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use TestsAlwaysIncluded\Soapy\SoapEvent;
+use TestsAlwaysIncluded\Soapy\SoapEvents;
 
 class MockSubscriber implements EventSubscriberInterface
 {
@@ -41,8 +42,8 @@ class MockSubscriber implements EventSubscriberInterface
 	public static function getSubscribedEvents()
 	{
 		return array(
-			array('onConstruct', 1000),
-			array('onBeforeRequest', 1000),
+			SoapEvents::CONSTRUCT => array('onConstruct', 1000),
+			SoapEvents::REQUEST_BEFORE => array('onBeforeRequest', 1000),
 		);
 	}
 

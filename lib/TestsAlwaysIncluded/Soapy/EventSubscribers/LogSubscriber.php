@@ -5,6 +5,7 @@ namespace TestsAlwaysIncluded\Soapy\EventSubscribers;
 use Psr\Logger;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use TestsAlwaysIncluded\Soapy\SoapEvent;
+use TestsAlwaysIncluded\Soapy\SoapEvents;
 
 /**
  * Logs SOAP requests and responses.
@@ -34,9 +35,9 @@ class LogSubscriber implements EventSubscriberInterface
 	public static function getSubscribedEvents()
 	{
 		return array(
-			array('onBeforeRequest', 0),
-			array('onResponse', 0),
-			array('onSoapFault', 0),
+			SoapEvents::REQUEST_BEFORE => array('onBeforeRequest', 0),
+			SoapEvents::RESPONSE => array('onResponse', 0),
+			SoapEvents::FAULT => array('onSoapFault', 0),
 		);
 	}
 
