@@ -1,6 +1,6 @@
 <?php
 
-namespace TestsAlwaysIncluded\Services;
+namespace TestsAlwaysIncluded\Soapy;
 
 use SoapClient as BaseSoapClient;
 use SoapFault;
