@@ -1,2 +1,2 @@
 # soapy
-A PHP SoapClient inspired by Guzzle and Symfony
+A PHP SoapClient inspired by Guzzle, Symfony, and PHPTools.
