@@ -1,6 +1,6 @@
 {
   "name": "tests-always-included/soapy",
-  "description": "A PHP SoapClient inspired by Guzzle and Symfony",
+  "description": "A PHP SoapClient inspired by Guzzle, Symfony and PHPTools",
   "type": "library",
   "keywords": ["SOAP", "SoapClient"],
   "license": "MIT",
